@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z} | tr """\n" | grep -v "oo"
+tr 'A-Ma-mN-Zn-z' 'N-Zn-zA-Ma-m'
