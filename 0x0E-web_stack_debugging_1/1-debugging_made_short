@@ -2,5 +2,5 @@
 # configures a server to run and listen  on port 80 of all the server’s active IPv4 IPs
 
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart
+sudo service nginx restart
 kill "$(pgrep 'nginx' | head -1)"
