@@ -3,9 +3,9 @@
 information about his/her TODO list progress.
 """
 
-from sys import argv
 import re
 import requests
+from sys import argv
 
 REST_URL = "https://jsonplaceholder.typicode.com"
 
