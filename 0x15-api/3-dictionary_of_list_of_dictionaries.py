@@ -20,7 +20,8 @@ if __name__ == '__main__':
     for i in res_json:
         id_user = i.get('id')
         user_name = i.get('username')
-        rest_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(id_user)
+        rest_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(
+                id_user)
         rest_url = rest_url + '/todos/'
         res = requests.get(rest_url)
 
