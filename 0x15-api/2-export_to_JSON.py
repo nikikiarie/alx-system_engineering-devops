@@ -15,7 +15,8 @@ if __name__ == "__main__":
     reqSes = requests.Session()
 
     emp_id = sys.argv[1]
-    urlid = 'https://jsonplaceholder.typicode.com/users/{}/todos'.format(emp_id)
+    urlid = 'https://jsonplaceholder.typicode.com/users/{}/todos'.format(
+            emp_id)
     url_n = 'https://jsonplaceholder.typicode.com/users/{}'.format(emp_id)
 
     empl = reqSes.get(urlid)
