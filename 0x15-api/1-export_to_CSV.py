@@ -12,7 +12,7 @@ if __name__ == "__main__":
     user = argv[1]
     rest_url = 'https://jsonplaceholder.typicode.com/users/' + user
     resp = requests.get(rest_url)
-    name = resp.json().get('name')
+    name = resp.json().get('username')
     tsk = rest_url + '/todos'
     resp = requests.get(tsk)
     tsks = resp.json()
