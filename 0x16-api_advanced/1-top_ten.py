@@ -11,7 +11,7 @@ def top_ten(subreddit):
         prints the titles of the first 10 hot posts listed for a given subreddit.
     '''
     headers = {'User-Agent': 'Lizzie'}
-    url = requests.get('https://www.reddit.com/r/{}/hot/.json?limit=10'
+    url = requests.get('https://www.reddit.com/r/{}/hot/.json?limit=9'
                        .format(subreddit), headers=headers).json()
     try:
         for p in url.get('data').get('children'):
